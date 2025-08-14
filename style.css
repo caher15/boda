@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* ======== SECCIÓN PRINCIPAL (Foto + Logo) ======== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/img/fondo.jpg'); /* Foto principal */
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.logo img {
+    width: 220px;
+    max-width: 80%;
+}
+.names {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+/* ======== SECCIÓN INTRO ======== */
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e8ece6;
+}
+.parents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+.parents > div:first-child {
+    position: relative;
+    padding-right: 45px;
+}
+
+.parents > div:first-child::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 44px;       
+    width: 2px;         
+    background-color: #333;
+}
+
+/* ======== SECCIÓN FECHA ======== */
+.date-section {
+    text-align: center;
+    background-color: #f4f1f7;
+    padding: 30px 20px;
+}
+.date-title {
+    color: #888;
+    font-weight: bold;
+}
+.date {
+    font-size: 2.5rem;
+    color: #a18bbf;
+    margin: 15px 0;
+}
+.events {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.event {
+    text-align: center;
+    width: 45%;
+}
+.event img {
+    width: 40px;
+    margin-bottom: 8px;
+}
+.btn-map {
+    background-color: #b9c8b1;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* ======== SECCIÓN REGALOS ======== */
+.gifts {
+    background-color: #d7cbe9;
+    text-align: center;
+    padding: 30px 20px;
+}
+.gift-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.gift-logos img {
+    height: 25px;
+}
+.btn-gift {
+    background-color: #a18bbf;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ======== SECCIÓN CONFIRMAR ======== */
+.rsvp {
+    background-color: #e8ece6;
+    text-align: center;
+    padding: 30px 20px;
+}
+.btn-rsvp {
+    background-color: #b9c8b1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* ======== GALERÍA FINAL ======== */
+.gallery img {
+    width: 100%;
+    display: block;
+}
