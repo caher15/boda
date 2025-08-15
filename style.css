@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #e8ece6;
     color: #333;
 }
 
@@ -48,12 +48,16 @@ body {
     padding: 30px 20px;
     background-color: #e8ece6;
 }
+.intro p{
+    color: #384333;
+}
 .parents {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 0.9rem;
     margin-top: 15px;
+    font-family: "Libertinus Serif", serif;
 }
 .parents > div:first-child {
     position: relative;
@@ -73,17 +77,33 @@ body {
 
 /* ======== SECCIÓN FECHA ======== */
 .date-section {
+    position: relative;
     text-align: center;
     background-color: #f4f1f7;
     padding: 30px 20px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
+.flower-icon {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 176px;
+    height: 35px;
+    background-image: url(/assets/icons/flor.png);
+    background-size: cover;
 }
 .date-title {
+    margin-top: 50px;
     color: #888;
     font-weight: bold;
 }
 .date {
-    font-size: 2.5rem;
-    color: #a18bbf;
+    font-size: 3.2rem;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 600;
+    color: #c5aff8;
     margin: 15px 0;
 }
 .events {
@@ -96,16 +116,33 @@ body {
     width: 45%;
 }
 .event img {
-    width: 40px;
+    width: 75px;
     margin-bottom: 8px;
+}
+.event-body{
+    margin-bottom: 10px;
 }
 .btn-map {
     background-color: #b9c8b1;
     color: white;
-    padding: 8px 15px;
+    padding: 8px 40px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 0.8rem;
+}
+.event-subtitle{
+    font-size: 1.2rem;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 600;
+    color: #c5aff8;
+}
+.date-footer p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 400;
+    color: #b9c8b1;
+
 }
 
 /* ======== SECCIÓN REGALOS ======== */
@@ -153,4 +190,17 @@ body {
 .gallery img {
     width: 100%;
     display: block;
+}
+@media screen and (min-width: 425px) {
+    .parents > div:first-child {
+    position: relative;
+    padding-right: 67px;
+}
+    
+}
+@media screen and (min-width: 768px) {
+    .parents > div:first-child::after {
+    display: none;
+}
+    
 }
